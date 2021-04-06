@@ -1,6 +1,7 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 /** @type {import('webpack').Configuration} */
 module.exports = {
     entry: path.resolve(__dirname, '../src/index.js'),
@@ -21,6 +22,10 @@ module.exports = {
               test: /.(css|sass\scss)$/
           },
           {
+            test: /svg-2\.svg$/, 
+            use: 'file-loader?name=[name].[ext]',        
+          },          
+          {
               type: "asset",
               test: /\.(png|svg|jpg|jpeg|gif)$/i,
           }  
@@ -33,6 +38,9 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
+        }),
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
         }),
     ],
 };
