@@ -1,0 +1,48 @@
+{
+  "name": "matisacloud",
+  "version": "1.0.0",
+  "description": "Sistema contable en la nube",
+  "main": "index.js",
+  "scripts": {
+    "start2": "webpack serve --mode=development --entry ./src/index.js --output-filename ./dist/app.bundle.js",
+    "serve": "webpack serve --mode=development",
+    "dev": "webpack --mode=development -w",
+    "prod": "webpack --mode=production",
+    "webpack": "webpack",
+    "startwp": "webpack serve --open",
+    "build": "webpack --config config/webpack.prod.js",
+    "start": "webpack serve --config config/webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "Jimmy Ronald Perez Pierola / Gearsoft Technologies 2021",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "path": "^0.12.7",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "browserslist": "> 0.25%, not dead, not ie 11"
+}
