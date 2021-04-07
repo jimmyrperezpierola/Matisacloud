@@ -8,7 +8,9 @@ const devConfig = {
     devServer: {
         port: 3007,
         contentBase: "../dist",
-        open:"firefox"
+        open:"firefox",
+        // HACK para permitir ver la APP desde otros dispositivos
+        //host: '0.0.0.0'        
     },
     target: "web"
 };

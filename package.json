@@ -40,9 +40,13 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "axios": "^0.21.1",
+    "copy-webpack-plugin": "^8.1.1",
     "core-js": "^3.9.1",
     "firebase": "^8.3.2",
     "jwt-decode": "^3.1.2",
+    "mini-css-extract-plugin": "^1.4.0",
+    "moment": "^2.29.1",
+    "postcss-loader": "^5.2.0",
     "process": "^0.11.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -51,7 +55,8 @@
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "url-loader": "^4.1.1"
   },
   "browserslist": "> 0.25%, not dead, not ie 11"
 }
